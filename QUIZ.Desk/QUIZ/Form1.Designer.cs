@@ -29,101 +29,145 @@
         private void InitializeComponent()
         {
             this.BemVindo = new System.Windows.Forms.Label();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.checkBox2 = new System.Windows.Forms.CheckBox();
-            this.checkBox3 = new System.Windows.Forms.CheckBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.comecar = new System.Windows.Forms.Button();
+            this.salvar = new System.Windows.Forms.Button();
             this.picture1 = new System.Windows.Forms.PictureBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtNome = new System.Windows.Forms.TextBox();
+            this.Nome = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.click = new System.Windows.Forms.Label();
+            this.medio = new System.Windows.Forms.RadioButton();
+            this.facil = new System.Windows.Forms.RadioButton();
+            this.dificil = new System.Windows.Forms.RadioButton();
             ((System.ComponentModel.ISupportInitialize)(this.picture1)).BeginInit();
             this.SuspendLayout();
             // 
             // BemVindo
             // 
             this.BemVindo.AutoSize = true;
-            this.BemVindo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(252)))), ((int)(((byte)(242)))));
-            this.BemVindo.Font = new System.Drawing.Font("Stencil", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BemVindo.Location = new System.Drawing.Point(12, 18);
+            this.BemVindo.BackColor = System.Drawing.Color.Transparent;
+            this.BemVindo.Font = new System.Drawing.Font("Stencil", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BemVindo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(142)))), ((int)(((byte)(34)))), ((int)(((byte)(34)))));
+            this.BemVindo.Location = new System.Drawing.Point(95, 119);
             this.BemVindo.Name = "BemVindo";
-            this.BemVindo.Size = new System.Drawing.Size(427, 25);
+            this.BemVindo.Size = new System.Drawing.Size(398, 64);
             this.BemVindo.TabIndex = 0;
-            this.BemVindo.Text = "Bem-Vindo! Texte seus conhecimentos.";
+            this.BemVindo.Text = "Bem-Vindo! \r\nTeste seus conhecimentos.";
+            this.BemVindo.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             // 
-            // checkBox1
+            // comecar
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(37, 217);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(80, 17);
-            this.checkBox1.TabIndex = 1;
-            this.checkBox1.Text = "checkBox1";
-            this.checkBox1.UseVisualStyleBackColor = true;
+            this.comecar.BackColor = System.Drawing.Color.Transparent;
+            this.comecar.Font = new System.Drawing.Font("Stencil", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comecar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(142)))), ((int)(((byte)(34)))), ((int)(((byte)(34)))));
+            this.comecar.Location = new System.Drawing.Point(319, 347);
+            this.comecar.Name = "comecar";
+            this.comecar.Size = new System.Drawing.Size(174, 35);
+            this.comecar.TabIndex = 5;
+            this.comecar.Text = "Começar";
+            this.comecar.UseVisualStyleBackColor = false;
+            this.comecar.Click += new System.EventHandler(this.comecar_Click);
             // 
-            // checkBox2
+            // salvar
             // 
-            this.checkBox2.AutoSize = true;
-            this.checkBox2.Location = new System.Drawing.Point(209, 217);
-            this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(80, 17);
-            this.checkBox2.TabIndex = 2;
-            this.checkBox2.Text = "checkBox2";
-            this.checkBox2.UseVisualStyleBackColor = true;
-            // 
-            // checkBox3
-            // 
-            this.checkBox3.AutoSize = true;
-            this.checkBox3.Location = new System.Drawing.Point(123, 217);
-            this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(80, 17);
-            this.checkBox3.TabIndex = 3;
-            this.checkBox3.Text = "checkBox3";
-            this.checkBox3.UseVisualStyleBackColor = true;
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(36, 322);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 4;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(470, 300);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 5;
-            this.button2.Text = "button2";
-            this.button2.UseVisualStyleBackColor = true;
-            // 
-            // button3
-            // 
-            this.button3.Location = new System.Drawing.Point(360, 337);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
-            this.button3.TabIndex = 6;
-            this.button3.Text = "button3";
-            this.button3.UseVisualStyleBackColor = true;
+            this.salvar.Location = new System.Drawing.Point(388, 224);
+            this.salvar.Name = "salvar";
+            this.salvar.Size = new System.Drawing.Size(75, 23);
+            this.salvar.TabIndex = 6;
+            this.salvar.Text = "Salvar";
+            this.salvar.UseVisualStyleBackColor = true;
+            this.salvar.Click += new System.EventHandler(this.salvar_Click);
             // 
             // picture1
             // 
             this.picture1.BackColor = System.Drawing.Color.Transparent;
-            this.picture1.Image = global::QUIZ.Properties.Resources.unnamed;
-            this.picture1.Location = new System.Drawing.Point(12, 37);
+            this.picture1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.picture1.Image = global::QUIZ.Properties.Resources.teste;
+            this.picture1.Location = new System.Drawing.Point(158, 12);
             this.picture1.Name = "picture1";
-            this.picture1.Size = new System.Drawing.Size(362, 131);
+            this.picture1.Size = new System.Drawing.Size(240, 104);
+            this.picture1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.picture1.TabIndex = 7;
             this.picture1.TabStop = false;
             // 
-            // textBox1
+            // txtNome
             // 
-            this.textBox1.Location = new System.Drawing.Point(359, 71);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 8;
+            this.txtNome.Location = new System.Drawing.Point(231, 224);
+            this.txtNome.Name = "txtNome";
+            this.txtNome.Size = new System.Drawing.Size(133, 20);
+            this.txtNome.TabIndex = 8;
+            // 
+            // Nome
+            // 
+            this.Nome.AutoSize = true;
+            this.Nome.BackColor = System.Drawing.Color.Transparent;
+            this.Nome.Font = new System.Drawing.Font("Stencil", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Nome.ForeColor = System.Drawing.Color.White;
+            this.Nome.Location = new System.Drawing.Point(66, 223);
+            this.Nome.Name = "Nome";
+            this.Nome.Size = new System.Drawing.Size(159, 19);
+            this.Nome.TabIndex = 9;
+            this.Nome.Text = "Nome do Jogador :";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Stencil", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(66, 276);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(163, 19);
+            this.label1.TabIndex = 10;
+            this.label1.Text = "Escolha um nível :\r\n";
+            // 
+            // click
+            // 
+            this.click.AutoSize = true;
+            this.click.BackColor = System.Drawing.Color.Transparent;
+            this.click.Font = new System.Drawing.Font("Stencil", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.click.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(142)))), ((int)(((byte)(34)))), ((int)(((byte)(34)))));
+            this.click.Location = new System.Drawing.Point(95, 350);
+            this.click.Name = "click";
+            this.click.Size = new System.Drawing.Size(192, 32);
+            this.click.TabIndex = 11;
+            this.click.Text = "Vamos jogar";
+            // 
+            // medio
+            // 
+            this.medio.AutoSize = true;
+            this.medio.BackColor = System.Drawing.Color.Transparent;
+            this.medio.Location = new System.Drawing.Point(319, 278);
+            this.medio.Name = "medio";
+            this.medio.Size = new System.Drawing.Size(85, 17);
+            this.medio.TabIndex = 12;
+            this.medio.TabStop = true;
+            this.medio.Text = "radioButton1";
+            this.medio.UseVisualStyleBackColor = false;
+            // 
+            // facil
+            // 
+            this.facil.AutoSize = true;
+            this.facil.BackColor = System.Drawing.Color.Transparent;
+            this.facil.Location = new System.Drawing.Point(231, 278);
+            this.facil.Name = "facil";
+            this.facil.Size = new System.Drawing.Size(85, 17);
+            this.facil.TabIndex = 13;
+            this.facil.TabStop = true;
+            this.facil.Text = "radioButton2";
+            this.facil.UseVisualStyleBackColor = false;
+            // 
+            // dificil
+            // 
+            this.dificil.AutoSize = true;
+            this.dificil.BackColor = System.Drawing.Color.Transparent;
+            this.dificil.Location = new System.Drawing.Point(410, 278);
+            this.dificil.Name = "dificil";
+            this.dificil.Size = new System.Drawing.Size(85, 17);
+            this.dificil.TabIndex = 14;
+            this.dificil.TabStop = true;
+            this.dificil.Text = "radioButton3";
+            this.dificil.UseVisualStyleBackColor = false;
             // 
             // Form1
             // 
@@ -133,14 +177,16 @@
             this.BackgroundImage = global::QUIZ.Properties.Resources._7bf59cf96ad2f028555e06259cb70d0d;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(560, 403);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.dificil);
+            this.Controls.Add(this.facil);
+            this.Controls.Add(this.medio);
+            this.Controls.Add(this.click);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.Nome);
+            this.Controls.Add(this.txtNome);
             this.Controls.Add(this.picture1);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.checkBox3);
-            this.Controls.Add(this.checkBox2);
-            this.Controls.Add(this.checkBox1);
+            this.Controls.Add(this.salvar);
+            this.Controls.Add(this.comecar);
             this.Controls.Add(this.BemVindo);
             this.DoubleBuffered = true;
             this.Name = "Form1";
@@ -154,14 +200,16 @@
         #endregion
 
         private System.Windows.Forms.Label BemVindo;
-        private System.Windows.Forms.CheckBox checkBox1;
-        private System.Windows.Forms.CheckBox checkBox2;
-        private System.Windows.Forms.CheckBox checkBox3;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button comecar;
+        private System.Windows.Forms.Button salvar;
         private System.Windows.Forms.PictureBox picture1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtNome;
+        private System.Windows.Forms.Label Nome;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label click;
+        private System.Windows.Forms.RadioButton medio;
+        private System.Windows.Forms.RadioButton facil;
+        private System.Windows.Forms.RadioButton dificil;
     }
 }
 
