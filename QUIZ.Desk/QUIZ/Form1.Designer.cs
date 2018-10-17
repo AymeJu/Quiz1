@@ -30,7 +30,6 @@
         {
             this.BemVindo = new System.Windows.Forms.Label();
             this.comecar = new System.Windows.Forms.Button();
-            this.salvar = new System.Windows.Forms.Button();
             this.picture1 = new System.Windows.Forms.PictureBox();
             this.txtNome = new System.Windows.Forms.TextBox();
             this.Nome = new System.Windows.Forms.Label();
@@ -58,6 +57,7 @@
             // comecar
             // 
             this.comecar.BackColor = System.Drawing.Color.Transparent;
+            this.comecar.Enabled = false;
             this.comecar.Font = new System.Drawing.Font("Stencil", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comecar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(142)))), ((int)(((byte)(34)))), ((int)(((byte)(34)))));
             this.comecar.Location = new System.Drawing.Point(319, 347);
@@ -67,16 +67,6 @@
             this.comecar.Text = "Começar";
             this.comecar.UseVisualStyleBackColor = false;
             this.comecar.Click += new System.EventHandler(this.comecar_Click);
-            // 
-            // salvar
-            // 
-            this.salvar.Location = new System.Drawing.Point(388, 224);
-            this.salvar.Name = "salvar";
-            this.salvar.Size = new System.Drawing.Size(75, 23);
-            this.salvar.TabIndex = 6;
-            this.salvar.Text = "Salvar";
-            this.salvar.UseVisualStyleBackColor = true;
-            this.salvar.Click += new System.EventHandler(this.salvar_Click);
             // 
             // picture1
             // 
@@ -96,6 +86,7 @@
             this.txtNome.Name = "txtNome";
             this.txtNome.Size = new System.Drawing.Size(133, 20);
             this.txtNome.TabIndex = 8;
+            this.txtNome.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNome_KeyPress);
             // 
             // Nome
             // 
@@ -137,36 +128,41 @@
             // 
             this.medio.AutoSize = true;
             this.medio.BackColor = System.Drawing.Color.Transparent;
+            this.medio.Font = new System.Drawing.Font("Stencil", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.medio.ForeColor = System.Drawing.Color.White;
             this.medio.Location = new System.Drawing.Point(319, 278);
             this.medio.Name = "medio";
-            this.medio.Size = new System.Drawing.Size(85, 17);
+            this.medio.Size = new System.Drawing.Size(65, 20);
             this.medio.TabIndex = 12;
-            this.medio.TabStop = true;
-            this.medio.Text = "radioButton1";
+            this.medio.Text = "Médio";
             this.medio.UseVisualStyleBackColor = false;
             // 
             // facil
             // 
             this.facil.AutoSize = true;
             this.facil.BackColor = System.Drawing.Color.Transparent;
+            this.facil.Checked = true;
+            this.facil.Font = new System.Drawing.Font("Stencil", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.facil.ForeColor = System.Drawing.Color.White;
             this.facil.Location = new System.Drawing.Point(231, 278);
             this.facil.Name = "facil";
-            this.facil.Size = new System.Drawing.Size(85, 17);
+            this.facil.Size = new System.Drawing.Size(61, 20);
             this.facil.TabIndex = 13;
             this.facil.TabStop = true;
-            this.facil.Text = "radioButton2";
+            this.facil.Text = "Fácil";
             this.facil.UseVisualStyleBackColor = false;
             // 
             // dificil
             // 
             this.dificil.AutoSize = true;
             this.dificil.BackColor = System.Drawing.Color.Transparent;
+            this.dificil.Font = new System.Drawing.Font("Stencil", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dificil.ForeColor = System.Drawing.Color.White;
             this.dificil.Location = new System.Drawing.Point(410, 278);
             this.dificil.Name = "dificil";
-            this.dificil.Size = new System.Drawing.Size(85, 17);
+            this.dificil.Size = new System.Drawing.Size(71, 20);
             this.dificil.TabIndex = 14;
-            this.dificil.TabStop = true;
-            this.dificil.Text = "radioButton3";
+            this.dificil.Text = "Difícil";
             this.dificil.UseVisualStyleBackColor = false;
             // 
             // Form1
@@ -185,10 +181,11 @@
             this.Controls.Add(this.Nome);
             this.Controls.Add(this.txtNome);
             this.Controls.Add(this.picture1);
-            this.Controls.Add(this.salvar);
             this.Controls.Add(this.comecar);
             this.Controls.Add(this.BemVindo);
             this.DoubleBuffered = true;
+            this.MaximumSize = new System.Drawing.Size(576, 441);
+            this.MinimumSize = new System.Drawing.Size(576, 441);
             this.Name = "Form1";
             this.Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)(this.picture1)).EndInit();
@@ -201,7 +198,6 @@
 
         private System.Windows.Forms.Label BemVindo;
         private System.Windows.Forms.Button comecar;
-        private System.Windows.Forms.Button salvar;
         private System.Windows.Forms.PictureBox picture1;
         private System.Windows.Forms.TextBox txtNome;
         private System.Windows.Forms.Label Nome;

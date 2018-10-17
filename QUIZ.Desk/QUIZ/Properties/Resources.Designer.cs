@@ -63,6 +63,16 @@ namespace QUIZ.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _0731c020c93e8e70d5abf43bcf492acf {
+            get {
+                object obj = ResourceManager.GetObject("0731c020c93e8e70d5abf43bcf492acf", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _7bf59cf96ad2f028555e06259cb70d0d {
             get {
                 object obj = ResourceManager.GetObject("7bf59cf96ad2f028555e06259cb70d0d", resourceCulture);
@@ -76,6 +86,26 @@ namespace QUIZ.Properties {
         internal static System.Drawing.Bitmap image {
             get {
                 object obj = ResourceManager.GetObject("image", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap image1 {
+            get {
+                object obj = ResourceManager.GetObject("image1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap terceira_guerra_mundial_razvan_ionut_dragomirescu_shutterstock {
+            get {
+                object obj = ResourceManager.GetObject("terceira-guerra-mundial-razvan_ionut_dragomirescu-shutterstock", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

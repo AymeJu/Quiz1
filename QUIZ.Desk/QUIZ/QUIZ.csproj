@@ -32,6 +32,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="MySql.Data">
+      <HintPath>..\..\..\..\..\Downloads\v4.5.2\MySql.Data.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -45,6 +48,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Dificil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dificil.Designer.cs">
+      <DependentUpon>Dificil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Facil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Facil.Designer.cs">
+      <DependentUpon>Facil.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -53,10 +68,25 @@
     </Compile>
     <Compile Include="Jogador.cs" />
     <Compile Include="Jogo.cs" />
+    <Compile Include="Medio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Medio.Designer.cs">
+      <DependentUpon>Medio.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Dificil.resx">
+      <DependentUpon>Dificil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Facil.resx">
+      <DependentUpon>Facil.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Medio.resx">
+      <DependentUpon>Medio.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -92,6 +122,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\7bf59cf96ad2f028555e06259cb70d0d.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Properties\MySql.Data.dll" />
+    <None Include="Resources\0731c020c93e8e70d5abf43bcf492acf.jpg" />
+    <None Include="Resources\image1.png" />
+    <None Include="Resources\terceira-guerra-mundial-razvan_ionut_dragomirescu-shutterstock.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

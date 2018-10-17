@@ -1,6 +1,6 @@
 ﻿namespace QUIZ
 {
-    partial class Form2
+    partial class Dificil
     {
         /// <summary>
         /// Required designer variable.
@@ -30,13 +30,16 @@
         {
             this.SuspendLayout();
             // 
-            // Form2
+            // Dificil
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 567);
-            this.Name = "Form2";
-            this.Text = "Form2";
+            this.BackgroundImage = global::QUIZ.Properties.Resources.terceira_guerra_mundial_razvan_ionut_dragomirescu_shutterstock;
+            this.ClientSize = new System.Drawing.Size(560, 403);
+            this.MaximumSize = new System.Drawing.Size(576, 441);
+            this.MinimumSize = new System.Drawing.Size(576, 441);
+            this.Name = "Dificil";
+            this.Text = "Dificil";
             this.ResumeLayout(false);
 
         }

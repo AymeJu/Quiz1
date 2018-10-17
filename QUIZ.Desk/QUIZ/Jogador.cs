@@ -40,7 +40,7 @@ namespace QUIZ
             strConexao += ";Uid=" + Id;
             strConexao += ";SSL Mode=None";
             // Server=localhost;Database=;Uid=root;Senha=
-
+            
             try
             {// Bloco de comandos sujeito a erros       
                 _nome = new MySqlConnection(strConexao);
@@ -58,7 +58,7 @@ namespace QUIZ
             {// Libera o recurso, caso necessário, mesmo no erro
                 _nome.Dispose();
             }
-
+            
 
 
         }

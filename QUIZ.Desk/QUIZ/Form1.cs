@@ -17,7 +17,7 @@ namespace QUIZ
         public Form1()
         {
             InitializeComponent();
-            _banco.Nome = "Histórico do Jogador";
+            _banco.Nome = "quiz";
             _banco.Conectar();
         }
 
@@ -28,33 +28,50 @@ namespace QUIZ
 
         private void salvar_Click(object sender, EventArgs e)
         {
+            
+        }
+
+        private void comecar_Click(object sender, EventArgs e)
+        {
             try
             {
                 //string nome = txtNome.Text;
-                if (txtNome.Text.Length < 3)
-                {
-                    MessageBox.Show("Nome inválido. Muito curto!");
-                }
-                else
-                {
-                    string sql = "INSERT INTO jogador ";
-                    sql += "(id, nome) VALUES (NULL,'" + txtNome.Text + "')";
-
-                    _banco.Inserir(sql);
-                    txtNome.Text = "";
-                }
+                string sql = "INSERT INTO jogador ";
+                sql += "(id, nome) VALUES (NULL,'" + txtNome.Text + "')";
+                _banco.Inserir(sql);
+                txtNome.Text = "";
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
             }
-        }
 
-        private void comecar_Click(object sender, EventArgs e)
-        {
             if (facil.Checked == true)
             {
-                ShowDialog.s
+                Facil facil = new Facil();
+                facil.Show();
+            }
+            if (medio.Checked == true)
+            {
+                Medio medio = new Medio();
+                medio.Show();
+            }
+            if (dificil.Checked == true)
+            {
+                Dificil dificil = new Dificil();
+                dificil.Show();
+                
+            }
+        }
+
+        private void txtNome_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if(txtNome.Text.Length < 3)
+            {
+                comecar.Enabled = false;
+            } else
+            {
+                comecar.Enabled = true;
             }
         }
     }
