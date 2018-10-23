@@ -57,12 +57,13 @@
             // comecar
             // 
             this.comecar.BackColor = System.Drawing.Color.Transparent;
+            this.comecar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.comecar.Enabled = false;
-            this.comecar.Font = new System.Drawing.Font("Stencil", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comecar.Font = new System.Drawing.Font("Stencil", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comecar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(142)))), ((int)(((byte)(34)))), ((int)(((byte)(34)))));
-            this.comecar.Location = new System.Drawing.Point(319, 347);
+            this.comecar.Location = new System.Drawing.Point(307, 347);
             this.comecar.Name = "comecar";
-            this.comecar.Size = new System.Drawing.Size(174, 35);
+            this.comecar.Size = new System.Drawing.Size(174, 37);
             this.comecar.TabIndex = 5;
             this.comecar.Text = "Começar";
             this.comecar.UseVisualStyleBackColor = false;
@@ -116,11 +117,12 @@
             // 
             this.click.AutoSize = true;
             this.click.BackColor = System.Drawing.Color.Transparent;
+            this.click.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.click.Font = new System.Drawing.Font("Stencil", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.click.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(142)))), ((int)(((byte)(34)))), ((int)(((byte)(34)))));
-            this.click.Location = new System.Drawing.Point(95, 350);
+            this.click.Location = new System.Drawing.Point(70, 347);
             this.click.Name = "click";
-            this.click.Size = new System.Drawing.Size(192, 32);
+            this.click.Size = new System.Drawing.Size(194, 34);
             this.click.TabIndex = 11;
             this.click.Text = "Vamos jogar";
             // 
