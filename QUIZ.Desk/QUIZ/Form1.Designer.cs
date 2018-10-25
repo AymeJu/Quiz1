@@ -186,10 +186,11 @@
             this.Controls.Add(this.comecar);
             this.Controls.Add(this.BemVindo);
             this.DoubleBuffered = true;
+            this.MaximizeBox = false;
             this.MaximumSize = new System.Drawing.Size(576, 441);
             this.MinimumSize = new System.Drawing.Size(576, 441);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Emily Chata";
             ((System.ComponentModel.ISupportInitialize)(this.picture1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
